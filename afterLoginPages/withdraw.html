@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Witdraw</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c764d5075a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-[#180029]">
+
+    <section>
+        <nav class="bg-gradient-to-r from-[#4c0087] to-[#7e4ed5]">
+            <div class="flex justify-between px-6 py-2">
+                <div class="home-button text-[#fff]">
+                    <button
+                        class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[13px] font-semibold rounded py-1 px-2 ">home</button>
+                </div>
+                <div class="after-login-navbar text-[#fff]">
+                    <ul class="flex  gap-2">
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-rocket  text-[12px]"></i> Lv 1</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Exp.: &#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Bal.: &#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="tabs py-6 px-5">
+        <div class="tab-wrapper text-[#fff]">
+            <ul class="flex gap-2.5">
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2 " href="#"><img
+                            src="https://cashcrush.io/assets/img/usr.svg" alt=""> My
+                        profile</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/bet-white.svg" alt=""> My bets</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/exposure-white.svg" alt="">exposure</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/deposit-white.svg" alt="">deposit</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/withdraw-white.svg" alt="">withdraw</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/transaction-white.svg" alt="">D/W
+                        Transaction</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/account-statment-white.svg" alt="">Account
+                        Statment</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><i
+                            class="fa-solid fa-circle-right"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- =============================Withdraw===================================== -->
+    <section class="py-6 px-5 container max-w-[1440px] m-auto">
+        <div class="kyc-update flex justify-between mt-2 mb-4 border border-[#333] rounded-md px-3 py-3">
+            <div class="kyc-status flex items-center gap-1 text-[#fff]  font-semibold">
+                <span class="">KYC Status : </span>
+                <span
+                    class="text-[#fff] bg-[#ffc107] text-[12px] capitalize px-1.5 rounded font-semibold">pending</span>
+            </div>
+            <div class="update-button">
+                <button
+                    class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] py-2 px-4 ">
+                    Update KYC
+                </button>
+            </div>
+        </div>
+
+        <div class="deposit-amount mt-3 mb-6">
+            <div class="amount-min-max flex flex-col gap-1 text-[#fff] border border-[#333] rounded-md px-3 py-1">
+                <div class="min-amount">
+                    <span class="uppercase text-[14px]">Minimum deposit : <span
+                            class="text-[#198754] text-[16px] font-semibold">&#x20B9; 100</span></span>
+                </div>
+                <div class="max-amount">
+                    <span class="uppercase text-[14px]">maximum deposit : <span
+                            class="text-[#198754] text-[16px] font-semibold">&#x20B9; 1000000</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="deposit-amount mt-3 mb-6">
+            <div class="bank-details flex flex-col text-[#fff] border border-[#333] rounded-md px-3 py-2">
+                <div class="details">
+                    <span class="capitalize text-[15px]">Bank Name :</span>
+                </div>
+                <div class="details">
+                    <span class="capitalize text-[15px]">Bank Account No :</span>
+                </div>
+                <div class="details">
+                    <span class="capitalize text-[15px]">Branch IFSC :</span>
+                </div>
+                <div class="details">
+                    <span class="capitalize text-[15px]">Account Holder Name :</span>
+                </div>
+                <div class="details">
+                    <span class="capitalize text-[15px]">Mobile No : <span
+                            class="text-[#b4b4b4]">8209387373</span></span>
+                </div>
+                <div class="details">
+                    <span class="capitalize text-[15px]">Available Withdraw Amount : <span
+                            class="text-[#198754] text-[16px] font-semibold">&#x20B9; 0.00</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="withdrawal-amount">
+            <div class="grid grid-rows-1  text-[#fff]">
+                <label for="amount">Withdrawal Amount (&#x20B9;) <span class="text-[#dc3545]">*</span>
+                    :</label>
+                <input class="text-[#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-6/12 h-[44px] px-4"
+                    placeholder="Enter your Withdrawal Amount" type="number" name="" id="amount">
+            </div>
+        </div>
+
+        <div class="withdrawal-amount mt-3">
+            <div class="grid grid-rows-1  text-[#fff]">
+                <label for="amount">Description<span class="text-[#b4b4b4]">(optional)</span>: </label>
+                <textarea class="text-[#fff] bg-[#3b2748] resize-none border border-[#a3a3a3] rounded w-full  px-4 py-1"
+                    name="amount" id="" cols="30" rows="4" placeholder="write description"></textarea>
+            </div>
+        </div>
+        <div class="deposit-button flex justify-center items-center text-[#fff] pt-8">
+            <button
+                class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                withdraw request
+            </button>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

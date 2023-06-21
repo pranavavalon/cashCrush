@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c764d5075a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-[#180029]">
+
+    <section>
+        <nav class="bg-gradient-to-r from-[#4c0087] to-[#7e4ed5]">
+            <div class="flex justify-between px-6 py-2">
+                <div class="home-button text-[#fff]">
+                    <button
+                        class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[13px] font-semibold rounded py-1 px-2 ">home</button>
+                </div>
+                <div class="after-login-navbar text-[#fff]">
+                    <ul class="flex  gap-2">
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-rocket  text-[12px]"></i> Lv 1</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Exp.: &#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Bal.: &#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="tabs py-6 px-5">
+        <div class="tab-wrapper text-[#fff]">
+            <ul class="flex gap-2.5">
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2 " href="#"><img
+                            src="https://cashcrush.io/assets/img/usr.svg" alt=""> My
+                        profile</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/bet-white.svg" alt=""> My bets</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/exposure-white.svg" alt="">exposure</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/deposit-white.svg" alt="">deposit</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/withdraw-white.svg" alt="">withdraw</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/transaction-white.svg" alt="">D/W
+                        Transaction</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/account-statment-white.svg" alt="">Account
+                        Statment</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><i
+                            class="fa-solid fa-circle-right"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===============================Transaction====================== -->
+    <section>
+        <div class="getting-transaction-details mx-8 pt-8 pb-12 border-b border-[#3b2748]">
+            <div class="flex items-end gap-3">
+                <div class="txn-id text-[#fff] flex flex-col gap-1">
+                    <label class="capitalize text-[15px]" for="txn-id">
+                        Txn Id
+                    </label>
+                    <input class="text-[#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-full h-[44px] px-4"
+                        placeholder="# Transaction Id" type="text" name="" id="txn-id">
+                </div>
+
+                <div class="txn-id text-[#fff] flex flex-col gap-1">
+                    <label class="capitalize text-[15px]">
+                        Transaction Type
+                    </label>
+                    <select
+                        class="appearance-none [#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-full h-[44px] px-4"
+                        placeholder="# Transaction Id">
+                        <option selected value>All</option>
+                        <option value="Deposit">Deposit</option>
+                        <option value="Manual Deposit">Manual Deposit</option>
+                        <option value="Withdraw">Withdraw</option>
+                    </select>
+                </div>
+
+                <div class="txn-id text-[#fff] flex flex-col gap-1">
+                    <label class="capitalize text-[15px]" for="txn-id">
+                        Status
+                    </label>
+                    <select
+                        class="appearance-none [#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-full h-[44px] px-4"
+                        placeholder="# Transaction Id">
+                        <option selected value>All</option>
+                        <option value="Success">Success</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Reject">Reject</option>
+                        <option value="Initialized">Initialized</option>
+                        <option value="Cancelled">Cancelled</option>
+                    </select>
+                </div>
+
+                <div class="txn-id text-[#fff] flex flex-col gap-1">
+                    <label class="capitalize text-[15px]" for="txn-id">
+                        Range
+                    </label>
+                    <input
+                        class="text-[#fff] bg-[#3b2748] cursor-pointer border border-[#a3a3a3] rounded w-full h-[44px] px-4"
+                        type="date" name="" id="txn-id">
+                </div>
+
+                <div class="action-btn ml-5">
+                    <div class="flex gap-5">
+                        <button
+                            class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">show</button>
+                        <button
+                            class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="display-table mx-8 pt-6">
+            <table class="text-[#fff] w-full">
+                <thead>
+                    <tr>
+                        <td class="capitalize py-1">Txn Id</td>
+                        <td class="capitalize py-1">Type</td>
+                        <td class="capitalize py-1">Amount</td>
+                        <td class="capitalize py-1">Status</td>
+                        <td class="capitalize py-1">Details</td>
+                        <td class="capitalize py-1">Bank Details</td>
+                        <td class="capitalize py-1">Date</td>
+                        <td class="capitalize py-1">Action</td>
+                    </tr>
+                </thead>
+                <tbody class="border-y-2 bg-[#3b2748]">
+                    <tr>
+                        <td colspan="8">
+                            <div class="no-data flex flex-col justify-center items-center opacity-25">
+                                <div class="img mt-2"><i class="fa-solid fa-box-open text-[50px]"></i></div>
+                                <p class="mb-6 text-[15px] font-medium">No Data</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+
+</html>

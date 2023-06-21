@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c764d5075a.js" crossorigin="anonymous"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-[#180029]">
+    <section>
+        <nav class="bg-gradient-to-r from-[#4c0087] to-[#7e4ed5]">
+            <div class="flex justify-between px-6 py-2">
+                <div class="home-button text-[#fff]">
+                    <button
+                        class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[13px] font-semibold rounded py-1 px-2 ">home</button>
+                </div>
+                <div class="after-login-navbar text-[#fff]">
+                    <ul class="flex  gap-2">
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-rocket  text-[12px]"></i> Lv 1</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Exp.: &#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Bal.: &#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="tabs py-6 px-5">
+        <div class="tab-wrapper text-[#fff]">
+            <ul class="flex gap-2.5">
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2 " href="#"><img
+                            src="https://cashcrush.io/assets/img/usr.svg" alt=""> My
+                        profile</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/bet-white.svg" alt=""> My bets</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/exposure-white.svg" alt="">exposure</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/deposit-white.svg" alt="">deposit</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/withdraw-white.svg" alt="">withdraw</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/transaction-white.svg" alt="">D/W
+                        Transaction</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/account-statment-white.svg" alt="">Account
+                        Statment</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="py-2 px-4 flex items-center gap-2" href="#"><i
+                            class="fa-solid fa-circle-right"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Deposit -->
+    <section class="deposit py-6 px-5">
+        <div class="deposit-btns text-[#fff]">
+            <ul class="flex  gap-2.5">
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-semibold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                    <a href="#" onclick="showForm('deposit')">deposit</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-semibold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                    <a href="#" onclick="showForm('deposit-issue')">deposit issue&#x3F;</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ==================Deposit Tab====================== -->
+        <div id="deposit" class="deposit-form container max-w-[1440px] m-auto ">
+            <div class="deposit-amount mt-10 mb-6">
+                <div class="amount-min-max flex flex-col gap-1 text-[#fff] border border-[#333] rounded-md px-3 py-1">
+                    <div class="min-amount">
+                        <span class="uppercase text-[14px]">Minimum deposit : <span
+                                class="text-[#198754] text-[16px] font-semibold">&#x20B9; 300</span></span>
+                    </div>
+                    <div class="max-amount">
+                        <span class="uppercase text-[14px]">maximum deposit : <span
+                                class="text-[#198754] text-[16px] font-semibold">&#x20B9; 1000000</span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="amount-btns">
+                <div class="wrapper text-[#c474ff]">
+                    <ul class="flex justify-center gap-6">
+                        <li class="border border-[#c474ff] text-[14px] rounded-md px-8 py-2"><button>500</button>
+                        </li>
+                        <li class="border border-[#c474ff] text-[14px] rounded-md px-8 py-2"><button>1000</button>
+                        </li>
+                        <li class="border border-[#c474ff] text-[14px] rounded-md px-8 py-2"><button>2000</button>
+                        </li>
+                        <li class="border border-[#c474ff] text-[14px] rounded-md px-8 py-2"><button>5000</button>
+                        </li>
+                        <li class="border border-[#c474ff] text-[14px] rounded-md px-8 py-2"><button>10000</button>
+                        </li>
+                        <li class="border border-[#c474ff] text-[14px] rounded-md px-8 py-2"><button>25000</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="amount-input mt-8 pb-4 border-b">
+                <div class="grid grid-cols-2 gap-5  text-[#fff]">
+                    <div class="label text-right">
+                        <label for="amount">Amount (&#x20B9;) <span class="text-[#dc3545]">*</span> :</label>
+                    </div>
+                    <div class="input">
+                        <input class="text-[#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-[330px] h-[44px] px-4"
+                            placeholder="Enter Amount" type="number" name="" id="amount">
+                    </div>
+                </div>
+            </div>
+            <div class="deposit-button flex justify-center items-center text-[#fff] pt-8">
+                <button
+                    class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                    deposit
+                </button>
+            </div>
+        </div>
+
+        <!-- ==================Deposit Issue==================== -->
+        <div id="deposit-issue" class="deposit-issue-form container max-w-[1440px] m-auto hidden">
+            <div class="deposit-note mt-10 mb-6">
+                <div
+                    class="amount-min-max flex items-center gap-1 text-[#fff] border border-[#333] rounded-md px-3 py-1.5">
+                    <span class="uppercase">Note : </span>
+                    <span class="text-[#198754] font-bold">After you have made the deposit, If the wallet is not
+                        showing money, Enter the
+                        amount and UPI reference / UTR (12 digit) number</span>
+                </div>
+            </div>
+
+            <div class="issue-form flex flex-col gap-2 pb-4 border-b">
+                <div class="amount grid grid-cols-2 gap-5 text-[#fff]">
+                    <label class="text-right" for="amount">Amount (&#x20B9;) <span class="text-[#dc3545]">*</span>
+                        :</label>
+                    <input class="text-[#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-[330px] h-[44px] px-4"
+                        placeholder="Enter Amount" type="number" name="" id="amount">
+                </div>
+                <div class="amount grid grid-cols-2 gap-5 text-[#fff]">
+                    <label class="text-right" for="amount">12 Digit UTR / UPI Ref Number (&#x20B9;) <span
+                            class="text-[#dc3545]">*</span> :</label>
+                    <input
+                        class="appearance-none text-[#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-[330px] h-[44px] px-4"
+                        placeholder="Enter utr Number" type="number" name="" id="amount">
+                </div>
+            </div>
+            <div class="deposit-button flex justify-center items-center text-[#fff] pt-8">
+                <button
+                    class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                    submit
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- =============================Deposit Tab Toggle=========================== -->
+    <script>
+        var currentForm = null;
+
+        function showForm(formId) {
+            var form = document.getElementById(formId);
+
+            if (currentForm !== form) {
+                if (currentForm) {
+                    currentForm.classList.add('hidden');
+                }
+
+                form.classList.remove('hidden');
+                currentForm = form;
+            }
+        }
+
+        // Show the default form on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            var defaultFormId = 'deposit';
+            var defaultForm = document.getElementById(defaultFormId);
+            defaultForm.classList.remove('hidden');
+            currentForm = defaultForm;
+        });
+    </script>
+</body>
+
+</html>
