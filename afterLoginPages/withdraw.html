@@ -7,6 +7,17 @@
     <title>Witdraw</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/c764d5075a.js" crossorigin="anonymous"></script>
+    <style>
+        /* Hide horizontal scrollbar */
+        .scroll-container {
+            overflow-x: scroll;
+        }
+
+        /* Hide vertical scrollbar */
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="bg-[#180029]">
@@ -44,48 +55,48 @@
 
     <section class="tabs py-6 px-5">
         <div class="tab-wrapper text-[#fff]">
-            <ul class="flex gap-2.5">
+            <ul class="flex gap-2.5 scroll-container">
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2 " href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2 " href="#"><img
                             src="https://cashcrush.io/assets/img/usr.svg" alt=""> My
                         profile</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="https://cashcrush.io/assets/img/bet-white.svg" alt=""> My bets</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="	https://cashcrush.io/assets/img/exposure-white.svg" alt="">exposure</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="https://cashcrush.io/assets/img/deposit-white.svg" alt="">deposit</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="https://cashcrush.io/assets/img/withdraw-white.svg" alt="">withdraw</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="	https://cashcrush.io/assets/img/transaction-white.svg" alt="">D/W
                         Transaction</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="	https://cashcrush.io/assets/img/account-statment-white.svg" alt="">Account
                         Statment</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><i
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><i
                             class="fa-solid fa-circle-right"></i>Logout</a>
                 </li>
             </ul>
@@ -93,7 +104,7 @@
     </section>
 
     <!-- =============================Withdraw===================================== -->
-    <section class="py-6 px-5 container max-w-[1440px] m-auto">
+    <section class="py-6 px-3 container max-w-[1680px] m-auto">
         <div class="kyc-update flex justify-between mt-2 mb-4 border border-[#333] rounded-md px-3 py-3">
             <div class="kyc-status flex items-center gap-1 text-[#fff]  font-semibold">
                 <span class="">KYC Status : </span>
@@ -102,7 +113,7 @@
             </div>
             <div class="update-button">
                 <button
-                    class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] py-2 px-4 ">
+                    class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] p-2 md:py-2 md:px-4 ">
                     Update KYC
                 </button>
             </div>
@@ -147,16 +158,16 @@
         </div>
 
         <div class="withdrawal-amount">
-            <div class="grid grid-rows-1  text-[#fff]">
+            <div class="grid grid-rows-1 text-[#fff]">
                 <label for="amount">Withdrawal Amount (&#x20B9;) <span class="text-[#dc3545]">*</span>
                     :</label>
-                <input class="text-[#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-6/12 h-[44px] px-4"
+                <input class="text-[#fff] bg-[#3b2748] border border-[#a3a3a3] rounded w-full md:w-6/12 h-[44px] px-4"
                     placeholder="Enter your Withdrawal Amount" type="number" name="" id="amount">
             </div>
         </div>
 
         <div class="withdrawal-amount mt-3">
-            <div class="grid grid-rows-1  text-[#fff]">
+            <div class="grid grid-rows-1 text-[#fff]">
                 <label for="amount">Description<span class="text-[#b4b4b4]">(optional)</span>: </label>
                 <textarea class="text-[#fff] bg-[#3b2748] resize-none border border-[#a3a3a3] rounded w-full  px-4 py-1"
                     name="amount" id="" cols="30" rows="4" placeholder="write description"></textarea>

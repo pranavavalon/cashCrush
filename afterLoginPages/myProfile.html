@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c764d5075a.js" crossorigin="anonymous"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        /* Hide horizontal scrollbar */
+        .scroll-container {
+            overflow-x: scroll;
+        }
+
+        /* Hide vertical scrollbar */
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-[#180029]">
+    <section>
+        <nav class="bg-gradient-to-r from-[#4c0087] to-[#7e4ed5]">
+            <div class="flex justify-between px-6 py-2">
+                <div class="home-button text-[#fff]">
+                    <button
+                        class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[13px] font-semibold rounded py-1 px-2 ">home</button>
+                </div>
+                <div class="after-login-navbar text-[#fff]">
+                    <ul class="flex  gap-2">
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-rocket  text-[12px]"></i> Lv 1</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Exp.: &#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Bal.: &#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="tabs py-6 px-5">
+        <div class="tab-wrapper text-[#fff]">
+            <ul class="flex gap-2.5 scroll-container">
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="w-max py-2 px-4 flex items-center gap-2 " href="#"><img
+                            src="https://cashcrush.io/assets/img/usr.svg" alt=""> My
+                        profile</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/bet-white.svg" alt=""> My bets</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/exposure-white.svg" alt="">exposure</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/deposit-white.svg" alt="">deposit</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="https://cashcrush.io/assets/img/withdraw-white.svg" alt="">withdraw</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/transaction-white.svg" alt="">D/W
+                        Transaction</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
+                            src="	https://cashcrush.io/assets/img/account-statment-white.svg" alt="">Account
+                        Statment</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><i
+                            class="fa-solid fa-circle-right"></i>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- My Profile -->
+    <section class="deposit py-6 px-5">
+        <div class="deposit-btns text-[#fff]">
+            <ul class="flex  gap-2.5">
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[15px] font-semibold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                    <a href="#" onclick="showForm('personal-details')">personal details</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[15px] font-semibold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                    <a href="#" onclick="showForm('bank-details')">Bank Details</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[15px] font-semibold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                    <a href="#" onclick="showForm('crypto-wallet')">Crypto wallet</a>
+                </li>
+                <li
+                    class="capitalize bg-[#463452] text-[#fff] text-[15px] font-semibold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">
+                    <a href="#" onclick="showForm('change-password')">Change password</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ==================Personal Detail Tab====================== -->
+        <div id="personal-details" class="personal-details container max-w-[1680px] m-auto ">
+            <div class="account-details mt-10 mb-6">
+                <div class="details mt-3 mb-6">
+                    <h1 class="text-[#fff] text-[18px] text-center mb-5">Personal Details</h1>
+                    <div class="bank-details flex flex-col text-[#fff] border border-[#333] rounded-md px-3 py-2">
+                        <div class="details">
+                            <span class="capitalize text-[15px]">ID : <span
+                                    class="text-[#b4b4b4] text-[14px]">7818574915</span></span>
+                        </div>
+                        <div class="details">
+                            <span class="capitalize text-[15px]">Username : <span
+                                    class="text-[#b4b4b4] text-[14px]">vikram22222</span></span>
+                        </div>
+                        <div class="details">
+                            <span class="capitalize text-[15px]">Email : <span
+                                    class="text-[#b4b4b4] text-[14px]">khoiwalvikram2@gmail.com</span></span>
+                        </div>
+                        <div class="details">
+                            <span class="capitalize text-[15px]">Available Withdraw Amount : <span
+                                    class="text-[#198754] text-[14px] font-semibold">&#x20B9; 0.00</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="currency mt-10 mb-6">
+                <div class="details mt-3 mb-6">
+                    <h1 class="text-[#fff] text-[15px]"><i class="fa-solid fa-circle-info"></i> if you have change other
+                        currency? its take some time to
+                        replace currency.</h1>
+                    <div
+                        class="currency-name flex flex-col items-center text-[#fff] border border-[#333] rounded-md px-3 py-2">
+                        <div class="currency-options">
+                            <h5 class="text-left">Currency :</h5>
+                            <select class=" [#fff] bg-[#3b2748] border border-[#a3a3a3] w-32 rounded h-[44px] px-4"
+                                name="currency" selected="selected" id="">
+                                <option value selected disabled hidden>Select Currency</option>
+                                <option selected value="INR">INR (&#x20B9;)</option>
+                                <option value="INR">USD (&#x24;)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col my-10">
+                <div class="flex gap-5 flex-auto flex-wrap">
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            First Name:
+                        </label>
+                        <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                            type="text" placeholder="Enter First Name" name="first-name" id="first-name">
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            Last Name:
+                        </label>
+                        <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                            type="text" placeholder="Enter Last Name" name="first-name" id="first-name">
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            First Name:
+                        </label>
+                        <select class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3">
+                            <option value selected disabled hidden>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            Birth date: (DD-MM-YYYY)
+                        </label>
+                        <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                            type="date" placeholder="Enter Last Name" name="first-name" id="first-name">
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            Country:
+                        </label>
+                        <select class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3">
+                            <option value selected disabled hidden>Select Country</option>
+                            <option value="Male">India</option>
+                            <option value="Female">USA</option>
+                            <option value="Others">Canada</option>
+                        </select>
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            State:
+                        </label>
+                        <select class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3">
+                            <option value selected disabled hidden>Select State</option>
+                            <option value="Male">Haryana</option>
+                            <option value="Female">Delhi</option>
+                            <option value="Others">Rajasthan</option>
+                        </select>
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            City:
+                        </label>
+                        <select class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3">
+                            <option value selected disabled hidden>Select State</option>
+                            <option value="Male">Haryana</option>
+                            <option value="Female">Delhi</option>
+                            <option value="Others">Rajasthan</option>
+                        </select>
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            Mobile:
+                        </label>
+                        <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                            type="number" name="" id="">
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            Address:
+                        </label>
+                        <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                            type="text" placeholder="Enter Address" name="" id="">
+                    </div>
+                    <div class="mt-2 flex-grow w-[49%] text-right">
+                        <button
+                            class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-10">save</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================Bank Details==================== -->
+        <div id="bank-details" class="bank-details container max-w-[800px] m-auto hidden">
+            <div class="bank-details mt-10 mb-6">
+                <div class="details mt-3 mb-6">
+                    <h1 class="text-[#fff] text-[18px] text-center mb-5">Bank Details</h1>
+                    <div class="bank-details flex flex-col text-[#fff] border border-[#333] rounded-md px-3 py-2">
+                        <div class="details">
+                            <span class="capitalize text-[15px]">Account Holder Name: <span
+                                    class="text-[#b4b4b4] text-[14px]"></span></span>
+                        </div>
+                        <div class="details">
+                            <span class=" text-[15px]">Email : <span
+                                    class="text-[#b4b4b4] text-[14px]">khoiwalvikram2@gmail.com</span></span>
+                        </div>
+                        <div class="details">
+                            <span class="capitalize text-[15px]">Mobile Number : <span
+                                    class="text-[#b4b4b4] text-[14px]">8209387373</span></span>
+                        </div>
+                        <div class="details">
+                            <span class="capitalize text-[15px]">Bank Name : <span
+                                    class="text-[#b4b4b4] text-[14px] font-semibold">N/A</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="enter-details">
+                <div class="flex gap-5 flex-auto flex-wrap">
+                    <div class="mt-5 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            Holder Name:
+                        </label>
+                        <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                            type="text" placeholder="Enter Holder Name" name="first-name" id="first-name">
+                    </div>
+                </div>
+                <div class="flex items-end gap-5 flex-auto flex-wrap">
+                    <div class="mt-5 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            IFSC Code:
+                        </label>
+                        <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                            type="text" placeholder="Enter IFSC Code" name="first-name" id="first-name">
+                    </div>
+                    <div class="verify mt-5">
+                        <button
+                            class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2.5 px-10">verify</button>
+                    </div>
+                </div>
+                <div class="flex gap-5 flex-auto flex-wrap">
+                    <div class="mt-5 flex-grow w-[49%]">
+                        <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                            Account Number:
+                        </label>
+                        <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                            type="text" placeholder="Enter Account Number" name="first-name" id="first-name">
+                    </div>
+                </div>
+            </div>
+            <div class="save mt-5 text-center">
+                <button
+                    class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2.5 px-10">verify</button>
+            </div>
+        </div>
+
+        <!-- ==================Crypto Wallet==================== -->
+        <div id="crypto-wallet" class="crypto-wallet hidden">
+            <div class="bank-details mt-10 mb-6 pb-12 border-b border-[#3b2748]">
+                <div class=" details mt-3 mb-6 md:px-48">
+                    <h1 class="text-[#fff] text-[18px] text-center mb-5">Crypto Wallet Details</h1>
+                    <div class="flex gap-5 flex-auto flex-wrap">
+                        <div class="mt-5 flex-grow w-[49%]">
+                            <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                                Crypto Coin <span class="text-[#dc3545] font-bold">*</span>
+                            </label>
+                            <select
+                                class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3">
+                                <option value selected disabled hidden>BTC</option>
+                                <option value="Male" selected>BTC</option>
+                                <option value="Male">TRON</option>
+                                <option value="Female">ETH</option>
+                                <option value="Others">BNB</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 flex-auto flex-wrap">
+                        <div class="mt-5 flex-grow w-[49%]">
+                            <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                                Crypto Address:
+                            </label>
+                            <input class="w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                                type="text" placeholder="Enter Your Crypto Address" name="first-name" id="first-name">
+                        </div>
+                    </div>
+                </div>
+                <div class="save mt-5 text-center">
+                    <button
+                        class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2.5 px-10">save</button>
+                </div>
+            </div>
+
+            <div class="display-table mx-3 pt-6 md:px-28 ">
+                <table class="text-[#fff] w-full">
+                    <thead>
+                        <tr>
+                            <td class="capitalize py-1 text-[12px] md:text-[15px]">S.No</td>
+                            <td class="capitalize py-1 text-[12px] md:text-[15px]">Coin</td>
+                            <td class="capitalize py-1 text-[12px] md:text-[15px]">Address</td>
+                            <td class="capitalize py-1 text-[12px] md:text-[15px]">Action</td>
+                        </tr>
+                    </thead>
+                    <tbody class="border-y-2 bg-[#3b2748]">
+                        <tr>
+                            <td colspan="8">
+                                <div class="no-data flex flex-col justify-center items-center opacity-25">
+                                    <div class="img mt-2"><i class="fa-solid fa-box-open text-[50px]"></i></div>
+                                    <p class="mb-6 text-[15px] font-medium">No Data</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ==================Change Password==================== -->
+        <div id="change-password" class="crypto-wallet container max-w-[800px] m-auto hidden">
+            <div class="bank-details mt-10 mb-6 pb-12">
+                <div class=" details mt-3 mb-6 ">
+                    <h1 class="text-[#fff] text-[18px] text-center mb-5">Change Password</h1>
+                    <div class="flex gap-5 flex-auto flex-wrap">
+                        <div class=" relative mt-5 flex-grow w-[49%]">
+                            <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                                Change Password:
+                            </label>
+                            <input
+                                class="relative w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                                type="password" placeholder="Current Password" name="first-name" id="first-name">
+                            <i
+                                class="fa-sharp fa-regular fa-eye text-[#b4b4b4] cursor-pointer absolute right-3 top-[38px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 flex-auto flex-wrap">
+                        <div class="relative mt-5 flex-grow w-[49%]">
+                            <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                                New Password:
+                            </label>
+                            <input class="relative w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                                type="password" placeholder="Password should be contain atleast 6 letters"
+                                name="first-name" id="first-name">
+                            <i
+                                class="fa-sharp fa-regular fa-eye text-[#b4b4b4] cursor-pointer absolute right-3 top-[38px]"></i>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 flex-auto flex-wrap">
+                        <div class="relative mt-5 flex-grow w-[49%]">
+                            <label class="text-[#fff] text-[15px] tracking-normal" for="first-name">
+                                Confirm New Password:
+                            </label>
+                            <input class="relative w-full bg-[#3b2748] border border-[#a3a3a3] rounded text-[#fff] h-[44px] px-3"
+                                type="password" placeholder="Confirm Password" name="first-name" id="first-name">
+                            <i
+                                class="fa-sharp fa-regular fa-eye text-[#b4b4b4] cursor-pointer absolute right-3 top-[38px]"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="update mt-5 text-center">
+                    <button
+                        class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2.5 px-10">update</button>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- =============================My Profile Tab Toggle=========================== -->
+    <script>
+        var currentForm = null;
+
+        function showForm(formId) {
+            var form = document.getElementById(formId);
+
+            if (currentForm !== form) {
+                if (currentForm) {
+                    currentForm.classList.add('hidden');
+                }
+
+                form.classList.remove('hidden');
+                currentForm = form;
+            }
+        }
+
+        // Show the default form on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            var defaultFormId = 'personal-details';
+            var defaultForm = document.getElementById(defaultFormId);
+            defaultForm.classList.remove('hidden');
+            currentForm = defaultForm;
+        });
+    </script>
+</body>
+
+</html>

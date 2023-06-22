@@ -7,6 +7,11 @@
     <title>After Login Screen</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/c764d5075a.js" crossorigin="anonymous"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 
 </head>
 
@@ -21,11 +26,180 @@
                 </div>
                 <div class="after-login-navbar text-[#fff]">
                     <ul class="flex  gap-2">
-                        <li class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 "><a href="#"><i class="fa-solid fa-rocket  text-[12px]"></i> Lv 1</a></li>
-                        <li class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 "><a href="#">Exp.:&#x20B9; 0.00</a></li>
-                        <li class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 "><a href="#">Bal.:&#x20B9; 0.00</a></li>
-                        <li class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 "><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#"><i class="fa-solid fa-rocket  text-[12px]"></i> Lv 1</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Exp.:&#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded py-1 px-2 ">
+                            <a href="#">Bal.:&#x20B9; 0.00</a>
+                        </li>
+                        <li
+                            class="text-[#efeaf3] capitalize border border-[#efeaf3] text-[14px] font-semibold rounded ">
+                            <button onclick="toggleMenu()" class="py-1 px-2 "><i class="fa-solid fa-user"></i></button>
+                        </li>
                     </ul>
+
+
+                    <div
+                        class="user-dropdown hidden block absolute bg-[#3b2748] opacity-95 rounded w-[300px] overflow-auto z-50 right-0 top-[50px]">
+
+                        <!-- ===============Profile Content================ -->
+                        <div class="profile-content p-2.5 mt-2.5 ">
+                            <div class="flex gap-3">
+                                <div class="flex flex-col">
+                                    <img class="w-[55px] h-[58px]"
+                                        src="https://cashcrush.io/cashcrush/img/profile-pic.svg" alt="">
+                                    <div class="user-level flex items-center gap-1">
+                                        <img class="w-[20px] h-[20px]"
+                                            src="https://cashcrush.io/cashcrush/img/lv/silver.svg" alt="">
+                                        <span class="text-white">Lv 1</span>
+                                    </div>
+                                </div>
+
+                                <div class="profile-name flex flex-col gap-2">
+                                    <h4 class="text-[#fff] text-[18px] font-bold">vikram22222</h4>
+                                    <div class="user-id flex gap-2 text-[17px]">
+                                        <span class="id">
+                                            ID: <span>7818574915</span>
+                                        </span>
+                                        <span class="cursor-pointer"><img
+                                                src="https://cashcrush.io/cashcrush/img/copy.svg" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="balance border border-[#c7b7d3] rounded p-2.5 mt-3.5">
+                                <div class="flex justify-between text-[#c7b7d3] text-[17px] mb-1.5">
+                                    <h3>My Credit</h3>
+                                    <p>&#x20B9; 0.00</p>
+                                </div>
+                                <div class="flex justify-between text-[#c7b7d3] text-[17px] mb-1.5">
+                                    <h3>Available Balance</h3>
+                                    <p>&#x20B9; 0.00</p>
+                                </div>
+                                <div class="flex justify-between text-[#c7b7d3] text-[17px] mb-1.5">
+                                    <h3>Exposure</h3>
+                                    <p>&#x20B9; 0.00</p>
+                                </div>
+                                <div class="flex justify-between text-[#c7b7d3] text-[17px] mb-1.5">
+                                    <h3>Bonus Balance</h3>
+                                    <p>&#x20B9; 0.00</p>
+                                </div>
+                            </div>
+
+                            <div class="add-btn my-2.5">
+                                <a href="#">
+                                    <butto
+                                        class="inline-block w-full bg-[#c7b7d3] rounded text-[#303030] text-[17px] text-center py-1.5 font-bold ">
+                                        Add Money</butto>
+                                </a>
+                            </div>
+
+                            <div class="border-b-2 border-[#7a7a7a]"></div>
+                        </div>
+
+                        <!-- ===================Menu============================ -->
+                        <div class="menu">
+                            <ul>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        Personal Details
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        KYC Details
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        Bank Details
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        Deposit Balance
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        Withdraw Balance
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        D/W Transaction
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        Account Statement
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        My Bets
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        Exposure
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        Bonus
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        Refer and Earn
+                                    </a>
+                                </li>
+                                <li class="my-1.5">
+                                    <a class="flex items-center py-2 px-3 text-[17px] gap-1" href="#">
+                                        <img class="w-[24px] h-[24px] ml-4"
+                                            src="https://cashcrush.io/cashcrush/img/p-detail-white.svg" alt="">
+                                        My Profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- ==================Logout Button================== -->
+                        <div class="logout mx-10 my-4">
+                            <button
+                                class="capitalize bg-[#c7b7d3] rounded text-[#303030] text-[17px] inline-block px-2.5 py-1.5 font-bold"><i
+                                    class="fa-solid fa-right-from-bracket"></i> logout</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -260,6 +434,19 @@
             </footer>
         </div>
     </section>
+
+    <script>
+        function toggleMenu() {
+            var div = document.querySelector('.user-dropdown');
+            if (div !== null) {
+                if (div.style.display === 'none') {
+                    div.style.display = 'block';
+                } else {
+                    div.style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

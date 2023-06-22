@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Crush</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://kit.fontawesome.com/c764d5075a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-[url('assets/images/background.png')] bg-[#180029] bg-hidden bg-no-repeat">
@@ -226,6 +233,47 @@
                     </div>
                     <div class="r w-[70px] h-0.5 bg-gradient-to-r from-[#98A7B5] via-grey to-transparent"></div>
                 </div>
+
+                <div class="owl-carousel owl-theme px-10 my-5">
+                    <div
+                        class="item w-full text-[#fff] bg-[#3a2947b3] md:w-[225px] lg:w-[305px] xl:w-[250px] text-center rounded-md pt-5">
+                        <div class="wrapper flex flex-col">
+                            <div class="user relative flex flex-col items-center justify-center">
+                                <div class="crown">
+                                    <img src="https://cashcrush.io/cashcrush/img/lv/lv1-taj.svg" alt="">
+                                </div>
+                                <div class="avatar">
+                                    <img src="	https://cashcrush.io/cashcrush/img/topplayer-avtar.svg
+                                        " alt="">
+                                </div>
+                                <div
+                                    class="player-position absolute bottom-[-15px] bg-[url('https://cashcrush.io/cashcrush/img/lv/silver-polygon.svg')] bg-[length:100%_100%] w-[200px] repeat-no">
+                                    <span class="text-[#000]">5</span>
+                                </div>
+                            </div>
+
+                            <div class="name-level mt-6">
+                                <h3 class="text-[#f5e8ff] text-[18px] font-bold leading-none">hema123</h3>
+                                <div class="level">
+                                    <p class="capitalize text-[#872cfa] text-[15px]">level 12</p>
+                                </div>
+                            </div>
+
+                            <div class="bet-amount flex justify-between px-4 pt-2 pb-4">
+                                <div class="total-bets flex flex-col">
+                                    <p class="text-[15px]">Total Bets</p>
+                                    <p class="font-bold text-lg leading-none">995</p>
+                                </div>
+
+                                <div class="win-amount flex flex-col items-end">
+                                    <p class="text-[15px]">Win Amount</p>
+                                    <p class="text-[14px] text-[#0fbf00] font-medium leading-none">&#x20B9;
+                                        12,222</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -265,6 +313,36 @@
             </footer>
         </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 32,
+                nav: true,
+                autoplay: true, // Add this option for autoplay
+                autoplayTimeout: 3000, // Set the timeout between slides (in milliseconds)
+                autoplayHoverPause: true, // Pause autoplay on mouse hover
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1200: {
+                        items: 5
+                    }
+                }
+            })
+        });
+    </script>
 </body>
 
 </html>

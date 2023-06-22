@@ -7,6 +7,17 @@
     <title>Transaction</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/c764d5075a.js" crossorigin="anonymous"></script>
+    <style>
+        /* Hide horizontal scrollbar */
+        .scroll-container {
+            overflow-x: scroll;
+        }
+
+        /* Hide vertical scrollbar */
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="bg-[#180029]">
@@ -44,48 +55,48 @@
 
     <section class="tabs py-6 px-5">
         <div class="tab-wrapper text-[#fff]">
-            <ul class="flex gap-2.5">
+            <ul class="flex gap-2.5 scroll-container">
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2 " href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2 " href="#"><img
                             src="https://cashcrush.io/assets/img/usr.svg" alt=""> My
                         profile</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="https://cashcrush.io/assets/img/bet-white.svg" alt=""> My bets</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="	https://cashcrush.io/assets/img/exposure-white.svg" alt="">exposure</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="https://cashcrush.io/assets/img/deposit-white.svg" alt="">deposit</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="https://cashcrush.io/assets/img/withdraw-white.svg" alt="">withdraw</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="	https://cashcrush.io/assets/img/transaction-white.svg" alt="">D/W
                         Transaction</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><img
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><img
                             src="	https://cashcrush.io/assets/img/account-statment-white.svg" alt="">Account
                         Statment</a>
                 </li>
                 <li
                     class="capitalize bg-[#463452] text-[#fff] text-[16px] font-bold rounded-md active:text-[#000] active:bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md">
-                    <a class="py-2 px-4 flex items-center gap-2" href="#"><i
+                    <a class="w-max py-2 px-4 flex items-center gap-2" href="#"><i
                             class="fa-solid fa-circle-right"></i>Logout</a>
                 </li>
             </ul>
@@ -94,9 +105,9 @@
 
     <!-- ===============================Transaction====================== -->
     <section>
-        <div class="getting-transaction-details mx-8 pt-8 pb-12 border-b border-[#3b2748]">
-            <div class="flex items-end gap-3">
-                <div class="txn-id text-[#fff] flex flex-col gap-1">
+        <div class="getting-transaction-details mx-3 md:mx-6 pt-8 pb-12 border-b border-[#3b2748]">
+            <div class="flex items-end flex-col md:flex-row gap-3">
+                <div class="w-full md:w-44 txn-id text-[#fff] flex flex-col gap-1">
                     <label class="capitalize text-[15px]" for="txn-id">
                         Txn Id
                     </label>
@@ -104,7 +115,7 @@
                         placeholder="# Transaction Id" type="text" name="" id="txn-id">
                 </div>
 
-                <div class="txn-id text-[#fff] flex flex-col gap-1">
+                <div class="w-full md:w-44 txn-id text-[#fff] flex flex-col gap-1">
                     <label class="capitalize text-[15px]">
                         Transaction Type
                     </label>
@@ -118,7 +129,7 @@
                     </select>
                 </div>
 
-                <div class="txn-id text-[#fff] flex flex-col gap-1">
+                <div class="w-full md:w-44 txn-id text-[#fff] flex flex-col gap-1">
                     <label class="capitalize text-[15px]" for="txn-id">
                         Status
                     </label>
@@ -134,7 +145,7 @@
                     </select>
                 </div>
 
-                <div class="txn-id text-[#fff] flex flex-col gap-1">
+                <div class="w-full md:w-44 txn-id text-[#fff] flex flex-col gap-1">
                     <label class="capitalize text-[15px]" for="txn-id">
                         Range
                     </label>
@@ -143,8 +154,8 @@
                         type="date" name="" id="txn-id">
                 </div>
 
-                <div class="action-btn ml-5">
-                    <div class="flex gap-5">
+                <div class="w-full md:w-44 action-btn ml-5">
+                    <div class="flex sm:flex-col lg:flex-row gap-1 lg:gap-5 justify-end md:justify-start">
                         <button
                             class="capitalize text-[16px] font-semibold rounded-md text-[#000] bg-gradient-to-r from-[#ca85ff] to-[#7e4ed5] active:rounded-md py-2 px-4">show</button>
                         <button
@@ -154,18 +165,18 @@
             </div>
         </div>
 
-        <div class="display-table mx-8 pt-6">
+        <div class="display-table mx-3 md:mx-6 pt-6">
             <table class="text-[#fff] w-full">
                 <thead>
                     <tr>
-                        <td class="capitalize py-1">Txn Id</td>
-                        <td class="capitalize py-1">Type</td>
-                        <td class="capitalize py-1">Amount</td>
-                        <td class="capitalize py-1">Status</td>
-                        <td class="capitalize py-1">Details</td>
-                        <td class="capitalize py-1">Bank Details</td>
-                        <td class="capitalize py-1">Date</td>
-                        <td class="capitalize py-1">Action</td>
+                        <td class="capitalize py-1 text-[12px] md:text-[15px]">Txn Id</td>
+                        <td class="capitalize py-1 text-[12px] md:text-[15px]">Type</td>
+                        <td class="capitalize py-1 text-[12px] md:text-[15px]">Amount</td>
+                        <td class="capitalize py-1 text-[12px] md:text-[15px]">Status</td>
+                        <td class="capitalize py-1 text-[12px] md:text-[15px]">Details</td>
+                        <td class="capitalize py-1 text-[12px] md:text-[15px]">Bank Details</td>
+                        <td class="capitalize py-1 text-[12px] md:text-[15px]">Date</td>
+                        <td class="capitalize py-1 text-[12px] md:text-[15px]">Action</td>
                     </tr>
                 </thead>
                 <tbody class="border-y-2 bg-[#3b2748]">
